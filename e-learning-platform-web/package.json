@@ -1,0 +1,36 @@
+{
+  "name": "ReanCode101",
+  "version": "0.0.0",
+  "private": true,
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "scripts": {
+    "build": "turbo run build",
+    "dev": "turbo run dev --parallel",
+    "lint": "turbo run lint",
+    "format": "prettier --write \"**/*.{ts,tsx,md}\""
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.8",
+    "eslint-config-custom": "*",
+    "postcss": "^8.4.16",
+    "prettier": "latest",
+    "prettier-plugin-tailwindcss": "^0.1.13",
+    "tailwindcss": "^3.1.8",
+    "turbo": "latest"
+  },
+  "engines": {
+    "npm": ">=7.0.0",
+    "node": ">=14.0.0"
+  },
+  "dependencies": {
+    "nextjs-progressbar": "^0.0.16",
+    "react-icons": "^4.7.1",
+    "swiper": "^8.4.5",
+    "ts-jest": "^29.0.3",
+    "video-react": "^0.16.0"
+  },
+  "packageManager": "yarn@1.22.17"
+}

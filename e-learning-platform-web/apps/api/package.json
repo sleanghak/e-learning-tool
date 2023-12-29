@@ -1,0 +1,45 @@
+{
+  "name": "api",
+  "version": "1.0.0",
+  "description": "backend of elearning tools",
+  "main": "server.js",
+  "scripts": {
+    "test": "jest",
+    "test:watchAll": "jest --watchAll",
+    "dev": "nodemon server.js",
+    "start": "NODE_ENV=production node server.js",
+    "build:image": "docker build . -t e_learning_service",
+    "dev:start": "docker run -it -p 8080:8080 e_learning_service"
+  },
+  "keywords": [
+    "express",
+    "mongodb",
+    "s3"
+  ],
+  "author": "sabaicode-dev",
+  "license": "ISC",
+  "dependencies": {
+    "@pusher/push-notifications-server": "^1.2.5",
+    "aws-sdk": "^2.1231.0",
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "dotenv": "^9.0.0",
+    "express": "^4.17.1",
+    "gridfs-stream": "^1.1.1",
+    "jest": "^27.5.1",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^5.12.7",
+    "morgan": "^1.10.0",
+    "multer": "^1.4.3",
+    "multer-gridfs-storage": "^5.0.1",
+    "nodemailer": "^6.7.3",
+    "nodemailer-sendgrid-transport": "^0.2.0",
+    "nodemon": "^2.0.7",
+    "nookies": "^2.5.2",
+    "postman-collection": "^4.1.5",
+    "socket.io": "^4.5.0",
+    "uuid": "^8.3.2",
+    "validator": "^13.7.0"
+  }
+}

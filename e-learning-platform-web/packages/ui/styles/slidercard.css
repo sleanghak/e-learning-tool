@@ -1,0 +1,282 @@
+.runOut .swiper-wrapper {
+  height: 450px;
+}
+
+.runOut .swiper-button-prev::after,
+.runOut .swiper-button-next::after,
+.runOut .swiper-pagination-bullet::after {
+  content: "";
+}
+
+.runOut .swiper-button-prev,
+.runOut .swiper-button-next {
+  top: 93%;
+  z-index: 10;
+  background-size: cover;
+  width: 40px;
+  height: 40px;
+}
+
+.runOut .swiper-button-prev {
+  left: 30%;
+  cursor: pointer;
+  background-image: url("https://cdn-icons-png.flaticon.com/512/3114/3114883.png");
+  width: 25px;
+  height: 25px;
+}
+
+.runOut .swiper-button-next {
+  background-image: url("https://cdn-icons-png.flaticon.com/512/3114/3114931.png");
+  right: 30%;
+  cursor: pointer;
+  width: 25px;
+  height: 25px;
+}
+
+
+.runOut .swiper-pagination-bullet {
+  width: 60px;
+  height: 4px;
+  background-color: #118aef;
+  border-radius: 10px;
+  position: relative;
+  bottom: 23px;
+}
+
+/*  */
+
+
+@media (max-width: 1024px) {
+  .runOut .swiper {
+    height: 500px;
+  }
+
+  .runOut .swiper-wrapper {
+    height: 500px;
+
+  }
+
+  .runOut .swiper-button-prev,
+  .runOut .swiper-button-next {
+    display: flex;
+    column-gap: 5.5rem;
+
+  }
+
+  .runOut .swiper-pagination-bullet {
+    display: none;
+
+  }
+}
+
+/* sider css two */
+
+.runOuts .swiper-wrapper {
+  height: 420px;
+}
+
+.runOuts .swiper-button-prev::after,
+.runOuts .swiper-button-next::after,
+.runOuts .swiper-pagination-bullet::after {
+  content: "";
+}
+
+/* .runOuts .swiper-button-prev,
+.runOuts .swiper-button-next {
+  top: 92%;
+  background-size: cover;
+  width: 40px;
+  height: 40px;
+} */
+.runOuts .swiper-button-prev {
+  position: absolute;
+  left: 30%;
+  cursor: pointer;
+  background-image: url("https://cdn-icons-png.flaticon.com/512/3114/3114883.png");
+  top: 92%;
+  background-size: cover;
+  width: 25px;
+  height: 25px;
+}
+
+.runOuts .swiper-button-next {
+  position: absolute;
+  background-image: url("https://cdn-icons-png.flaticon.com/512/3114/3114931.png");
+  right: 30%;
+  cursor: pointer;
+  top: 92%;
+  background-size: cover;
+  width: 25px;
+  height: 25px;
+}
+
+.runOuts .swiper-pagination-bullet {
+  width: 60px;
+  height: 4px;
+  background-color: #118aef;
+  border-radius: 10px;
+  position: relative;
+  bottom: 23px;
+}
+
+
+@media (max-width: 1024px) {
+  .runOuts .swiper {
+    height: 420px;
+  }
+
+  .runOuts .swiper-wrapper {
+    height: 420px;
+  }
+
+  .runOuts .swiper-button-prev,
+  .runOuts .swiper-button-next {
+    display: flex;
+    column-gap: 5.5rem;
+  }
+
+  .runOuts .swiper-pagination-bullet {
+    display: none;
+  }
+}
+
+/* slider style in page course */
+
+.runOutcourse .swiper-wrapper {
+  height: 420px;
+}
+
+.runOutcourse .swiper-button-prev::after,
+.runOutcourse .swiper-button-next::after,
+.runOutcourse .swiper-pagination-bullet::after {
+  content: "";
+}
+
+.runOutcourse .swiper-button-prev,
+.runOutcourse .swiper-button-next {
+  top: 92%;
+  z-index: 10;
+  background-size: cover;
+  width: 40px;
+  height: 40px;
+}
+
+.runOutcourse .swiper-button-prev,
+.swiper-button-prev {
+  left: 16.4%;
+  cursor: pointer;
+  background-image: url("https://cdn-icons-png.flaticon.com/512/3114/3114883.png");
+}
+
+.runOutcourse .swiper-button-next {
+  background-image: url("https://cdn-icons-png.flaticon.com/512/3114/3114931.png");
+  right: 16%;
+  cursor: pointer;
+}
+
+.runOutcourse .swiper-pagination-bullet {
+  width: 60px;
+  height: 4px;
+  background-color: #118aef;
+  border-radius: 10px;
+  position: relative;
+  top: 0;
+}
+
+@media (max-width: 1024px) {
+  .runOutcourse .swiper {
+    height: 420px;
+  }
+
+  .runOutcourse .swiper-wrapper {
+    height: 420px;
+  }
+
+  .runOutcourse .swiper-button-prev,
+  .runOutcourse .swiper-button-next {
+    display: flex;
+    column-gap: 5.5rem;
+  }
+
+  .runOutcourse .swiper-button-prev {
+    left: 28%;
+  }
+
+  .runOutcourse .swiper-button-next {
+    right: 30%;
+  }
+
+  .runOutcourse .swiper-pagination-bullet {
+    display: none;
+  }
+}
+
+/*slider in page studentwork */
+
+.runoutstudentwork .swiper-wrapper {
+  height: 440px;
+}
+
+.runoutstudentwork .swiper-button-prev::after,
+.runoutstudentwork .swiper-button-next::after,
+.runoutstudentwork .swiper-pagination-bullet::after {
+  content: "";
+}
+
+.runoutstudentwork .swiper-button-prev,
+.runoutstudentwork .swiper-button-next {
+  top: 93%;
+  background-size: cover;
+  width: 30px;
+  height: 30px;
+}
+
+.runoutstudentwork .swiper-button-prev,
+.swiper-button-prev {
+  left: 20.4%;
+  cursor: pointer;
+  background-image: url("https://cdn-icons-png.flaticon.com/512/3114/3114883.png");
+}
+
+.runoutstudentwork .swiper-button-next {
+  background-image: url("https://cdn-icons-png.flaticon.com/512/3114/3114931.png");
+  right: 23.4%;
+  cursor: pointer;
+}
+
+.runoutstudentwork .swiper-pagination-bullet {
+  width: 60px;
+  height: 4px;
+  background-color: #118aef;
+  border-radius: 10px;
+  position: relative;
+  bottom: 20px;
+}
+
+@media (max-width: 1300px) {
+  .runoutstudentwork .swiper {
+    height: 440px;
+  }
+
+  .runoutstudentwork .swiper-wrapper {
+    height: 440px;
+  }
+
+  .runoutstudentwork .swiper-button-prev,
+  .runoutstudentwork .swiper-button-next {
+    display: flex;
+    column-gap: 5.5rem;
+  }
+
+  .runoutstudentwork .swiper-button-prev {
+    left: 28%;
+  }
+
+  .runoutstudentwork .swiper-button-next {
+    right: 30%;
+  }
+
+  .runoutstudentwork .swiper-pagination-bullet {
+    display: none;
+  }
+}

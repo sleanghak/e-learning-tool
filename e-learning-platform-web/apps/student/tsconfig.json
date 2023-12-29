@@ -1,0 +1,15 @@
+{
+  "extends": "tsconfig/nextjs.json",
+  "include": [
+    "next-env.d.ts",
+    "**/*.ts",
+    "**/*.tsx",
+    "pages/index.js",
+    "../../packages/ui/components/pages/pageindex.tsx",
+    "pages/course.tsx"
+  ],
+  "exclude": ["node_modules"],
+  "compilerOptions": {
+    "jsx": "preserve"
+  }
+}

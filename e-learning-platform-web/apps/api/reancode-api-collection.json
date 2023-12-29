@@ -1,0 +1,103 @@
+{
+    "item": [
+        {
+            "id": "1b5c88f9-b5be-4edd-8932-98d135cd0751",
+            "name": "lesson",
+            "item": [
+                {
+                    "id": "1b2f5c73-08b3-4213-b322-823299791cee",
+                    "name": "create lesson",
+                    "request": {
+                        "url": {
+                            "protocol": "http",
+                            "port": "8080",
+                            "path": [
+                                "api",
+                                "v1",
+                                "lesson"
+                            ],
+                            "host": [
+                                "localhost"
+                            ],
+                            "query": [],
+                            "variable": []
+                        },
+                        "method": "POST",
+                        "body": {
+                            "mode": "raw",
+                            "raw": "{\"name\":\"lesson name\",\"description\":\"Description of lesson\",\"coverFileName\":\"pathOfFile\"}"
+                        }
+                    },
+                    "response": [],
+                    "event": []
+                },
+                {
+                    "id": "d6ccbcad-b081-42c6-9b3f-cf960913f130",
+                    "name": "get lesson",
+                    "request": {
+                        "url": {
+                            "protocol": "http",
+                            "port": "8080",
+                            "path": [
+                                "api",
+                                "v1",
+                                "lesson"
+                            ],
+                            "host": [
+                                "localhost"
+                            ],
+                            "query": [
+                                {
+                                    "key": "id",
+                                    "value": "lessonID"
+                                },
+                                {
+                                    "key": "name",
+                                    "value": "lessonName"
+                                },
+                                {
+                                    "key": "limit",
+                                    "value": "10"
+                                },
+                                {
+                                    "key": "page",
+                                    "value": "2"
+                                }
+                            ],
+                            "variable": []
+                        },
+                        "header": [
+                            {
+                                "key": "Authorization",
+                                "value": ""
+                            },
+                            {
+                                "key": "Content-Type",
+                                "value": "application/json"
+                            },
+                            {
+                                "key": "cache-control",
+                                "value": "no-cache"
+                            }
+                        ],
+                        "method": "GET",
+                        "body": {
+                            "mode": "raw",
+                            "raw": ""
+                        }
+                    },
+                    "response": [],
+                    "event": []
+                }
+            ],
+            "event": []
+        }
+    ],
+    "event": [],
+    "variable": [],
+    "info": {
+        "_postman_id": "16697b73-c729-46ea-9905-2378cdefc1f9",
+        "name": "REANCODE101",
+        "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+    }
+}
