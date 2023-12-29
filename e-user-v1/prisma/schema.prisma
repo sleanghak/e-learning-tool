@@ -1,0 +1,96 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = "postgres://tgluelvz:eFiyA9EYrq1i1x1rc9HrSHwOUhumgZs1@satao.db.elephantsql.com/tgluelvz"
+}
+
+model User {
+  id        Int    @id @default(autoincrement())
+  firstName String @db.VarChar(200)
+  lastName  String @db.VarChar(200)
+  email     String @db.VarChar(200)
+  file      File?
+  fileId    Int?
+
+  @@map("users")
+}
+
+model Course {
+  id           Int      @id @default(autoincrement())
+  name         String
+  description  String
+  price        Int
+  file         File?
+  fileId       Int?     @map("file_id")
+  videoIntroId String?  @map("video_file_Id") // refer to video
+  createAt     DateTime @default(now()) @map("created_at")
+  updatedAt    DateTime @updatedAt @map("updated_at")
+  classes      Class[]
+
+  @@map("courses")
+}
+
+model Class {
+  id            Int      @id @default(autoincrement())
+  name          String
+  description   String
+  coverFileName String   @map("cover_file_name")
+  startDate     DateTime
+  endDate       DateTime
+  status        Boolean
+  createAt      DateTime @default(now())
+  updatedAt     DateTime @updatedAt
+  lessons       Lesson[]
+  course        Course   @relation(fields: [courseId], references: [id])
+  courseId      Int
+
+  @@map("classes")
+}
+
+model Lesson {
+  id            Int             @id @default(autoincrement())
+  name          String
+  description   String
+  coverFileName String
+  status        Boolean
+  classs        Class           @relation(fields: [classId], references: [id])
+  classId       Int             @unique
+  VideoInLesson VideoInLesson[]
+
+  @@map("lessons")
+}
+
+model Video {
+  id            Int             @id @default(autoincrement())
+  name          String
+  description   String
+  duration      Int
+  VideoInLesson VideoInLesson[]
+
+  @@map("videos")
+}
+
+model VideoInLesson {
+  video    Video  @relation(fields: [videoId], references: [id])
+  videoId  Int
+  lesson   Lesson @relation(fields: [lessonId], references: [id])
+  lessonId Int
+
+  @@id([videoId, lessonId])
+}
+
+model File {
+  id       Int     @id @default(autoincrement())
+  name     String
+  fileUrl  String
+  user     User?   @relation(fields: [userId], references: [id])
+  userId   Int?    @unique
+  course   Course? @relation(fields: [courseId], references: [id])
+  courseId Int?    @unique
+}
