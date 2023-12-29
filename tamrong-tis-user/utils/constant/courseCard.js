@@ -1,0 +1,58 @@
+const courseCard = [
+    {
+        image: "/images/computer-science.jpg",
+        title: "computer-science",
+        alt: "img",
+        name: "Introduction Computer Science |",
+        hour: "1",
+        minute: "15",
+        rate: "4.8",
+    },
+    {
+        image: "/images/computer-science.jpg",
+        title: "computer-science",
+        alt: "img",
+        name: "Introduction Computer Science |",
+        hour: "2",
+        minute: "15",
+        rate: "4.8",
+    },
+    {
+        image: "/images/computer-science.jpg",
+        title: "computer-science",
+        alt: "img",
+        name: "Introduction Computer Science |",
+        hour: "3",
+        minute: "15",
+        rate: "4.8",
+    },
+    {
+        image: "/images/computer-science.jpg",
+        title: "computer-science",
+        alt: "img",
+        name: "Introduction Computer Science |",
+        hour: "3",
+        minute: "15",
+        rate: "4.8",
+    },
+    {
+        image: "/images/computer-science.jpg",
+        title: "computer-science",
+        alt: "img",
+        name: "Introduction Computer Science |",
+        hour: "3",
+        minute: "15",
+        rate: "4.8",
+    },
+    {
+        image: "/images/computer-science.jpg",
+        title: "computer-science",
+        alt: "img",
+        name: "Introduction Computer Science |",
+        hour: "3",
+        minute: "15",
+        rate: "4.8",
+    },
+];
+
+export { courseCard };
